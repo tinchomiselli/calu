@@ -9,10 +9,6 @@
   body {
   font-family: sans-serif;
   background: linear-gradient(yellow, #eb9f2e);
-  background-image: url(fotos/trigoabajo.png), url(fotos/trigoderecha.png), url(fotos/trigoizquierda.png);
-  background-repeat: repeat-x, repeat-y, repeat-y;
-  background-size: 5%;
-  background-position: bottom, left top, right top;
 }
 
   
