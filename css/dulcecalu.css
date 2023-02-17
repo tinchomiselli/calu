@@ -1,0 +1,202 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+  font-family: sans-serif;
+  background: linear-gradient(yellow, #eb9f2e);
+
+}
+
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align:center;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  a:hover {
+    background-color: black;
+    color: gold;
+  }
+  
+  
+  /* Estilos del encabezado */
+  
+  header {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 10px solid black;
+    flex-wrap: wrap; /* permite que los elementos se ajusten al ancho de la pantalla */
+  }
+  
+  header img {
+    height: 80px; /* ajusta el tamaño del logotipo */
+    margin: 0 20px; /* ajusta el margen */
+    transition: .5s ease;
+  }
+  
+  @media (max-width: 768px) { /* aplica estos estilos en pantallas de hasta 768px */
+    header img {
+      height: 60px;
+      margin: 0 10px;
+    }
+  }  
+  
+
+  header img:hover {
+    width: 150px;
+    height: 150px;
+    cursor:pointer;
+    color: gold;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  section#fotos {
+    display: flex;
+    width:auto;
+    height: 430px;
+  }
+
+  section#fotos img {
+width: 0px;
+flex-grow: 1;  
+object-fit: cover;
+transition: .5s ease;
+}
+
+section#fotos img:hover {
+    cursor: crosshair;
+    width:300px;
+    filter: contrast(120%);
+    opacity: 1;
+    }
+  
+  /* Estilos de los productos */
+  
+  article {
+    margin-top: 20px;
+    width: 48%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+  }
+  
+
+  section#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #productos article {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  section#productos article img {
+    border-radius: 100px solid black;
+    width: 25%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilos del cuadro de información */
+  
+  #cuadro-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    z-index: 9999;
+    overflow: auto;
+  }
+  
+  #cuadro-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  
+
+  .instagram-button {
+    background-color: gold;
+    border: 2px solid black;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .instagram-button:hover {
+    background-color: black;
+    color: gold;
+  }
+  
